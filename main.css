@@ -65,7 +65,7 @@ body {
     border-width: 5px;
     border-style: solid;
     border-color: var(--pink-c);
-    border-radius: 20px;
+    border-radius: 10px;
     border-style: solid;
 
     background-color: var(--bg-light-c);
@@ -78,7 +78,7 @@ body {
     border-width: 5px;
     border-style: solid;
     border-color: var(--bg-dark-c);
-    border-radius: 20px;
+    border-radius: 10px;
     border-style: solid;
     background-color: var(--bg-dark-c);
 
@@ -88,12 +88,17 @@ body {
         text-align: center;
         font-size: 120%;
         font-weight: 600;
+
+        border-width: 5px;
+        border-style: solid;
+        border-color: var(--pink-c);
+        border-radius: 10px;
+        background-color: var(--pink-c);
     }
 }
 
 /* -- UI elements -- */
 .side_button_container {
-    width: 50%;
     padding: 10px;
 }
 
