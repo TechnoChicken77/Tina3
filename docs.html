@@ -11,7 +11,98 @@
             <div class="title">Documentation</div>
         </div>
         <div class="root_container">
-            Oops! Nothing here yet.
+            <div class="vertical_container">
+                <!-- Introduction -->
+                <div class="section">
+                    <div class="section_title">Quick introduction</div>
+                    <div class="section_box">
+                        <p>
+                            Tina3 provides a lot of features. It may be hard to understand some of them.
+                            I recommend you to go through this documentation to understand how to use the
+                            bot at its full potential.
+                        </p>
+                    </div>
+                </div>
+                <!-- Simple commands -->
+                <div class="section">
+                    <div class="section_title">Simple commands</div>
+                    <div class="section_box">
+                        <p>
+                            Let's quickly go through some simple commands.
+                            You probably won't use them alot, however they are still there and you should know what they do.
+                        </p>
+                    </div>
+                    <!-- Command list -->
+                    <ul class="section_main_list">
+                        <li><!-- Ping command-->
+                            /ping
+                            <div class="section_box">
+                                <p>Displays ping from host system to Discord API. Does not display command latency.</p>
+                            </div>
+                        </li>
+                        <li><!-- Aboutme command-->
+                            /aboutme
+                            <div class="section_box">
+                                <p>Displays some general information about the bot. (I guess it's useless if you had read through the main page of this website)</p>
+                            </div>
+                        </li>
+                        <li><!-- Changelog command -->
+                            /changelog
+                            <div class="section_box">
+                                <p>Displays recent changes in the bot.</p>
+                            </div>
+                        </li>
+                        <li><!-- Help command -->
+                            /help
+                            <div class="section_box">
+                                <p>This is probably the command which had lead you to this website.</p>
+                            </div>
+                        </li>
+                        <li><!-- Userinfo command -->
+                            /userinfo
+                            <div class="section_box">
+                                <p>Displays some general information about a user.</p>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="section_box">
+                        <p>And that's it! But we're not done yet. Now it's time for some more interesting features.</p>
+                    </div>
+                </div>
+                <!-- R34 interface -->
+                <div class="section">
+                    <div class="section_title">Interface with Rule34</div>
+                    <div class="section_box">
+                        <p>This is probably the biggest feature of the bot. It contains some relatively complicated commands.</p>
+                        <p>You should also check the <a href="https://rule34.xxx/index.php?page=help&topic=cheatsheet">Rule34 cheatsheet</a> if you don't know how its search works.</p>
+                    </div>
+                    <!-- Main commands-->
+                    <h2 class="paragraph_title">Main commands</h2>
+                    <ul class="section_main_list">
+                        <li> <!-- R34 search command -->
+                            /r34 search
+                            <div class="section_box">
+                                <p>This is the command you probably will use the most from this command group</p>
+                                <p>Allows you to search for content from Rule34. Returns an interface which will allow you to look through the posts you searched for.</p>
+                                <p>It fully supports Rule34 search, so if you want to filter the search results better, you'll need to check that cheatsheet.</p>
+                                <p>Using this command <u>will cost you 2 tokens!</u> Using the interface is free though.</p>
+                            </div>
+                            Command arguments:
+                            <ol class="section_secondary_list">
+                                <li>
+                                    Tags - A list of tags to search posts by. Supports full Rule34 search.
+                                </li>
+                                <li>
+                                    Page - A page to start from. Depends on size. Default value - 0.
+                                </li>
+                                <li>
+                                    Size - size of the page. (1-10) Default value - 2.
+                                </li>
+                            </ol>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </div>
     </body>
 </html>

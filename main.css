@@ -198,6 +198,7 @@ body {
 .section_box {
     font-family: monospace;
     font-size: larger;
+    font-weight: 100;
 
     margin: 8px;
     padding: 4px;
@@ -207,4 +208,15 @@ body {
     border-width: 2px;
     border-radius: 10px;
     border-color: var(--bg-dark-c);
+
+    p {
+        margin-left: 16px;
+        margin-right: 16px;
+    }
 }
+
+.paragraph_title {
+    text-align: center;
+    font-family: Calibri, sans-serif;
+    font-weight: bold;
+};
