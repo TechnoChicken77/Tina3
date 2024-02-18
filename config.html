@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset='utf-8'>
+        <title>Tina3 configuration utility</title>
+        <meta name='viewport' content='width=device-width, initial-scale=1'>
+        <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    </head>
+    <body>
+        <div class="titlebar">
+            <div class="title">Tina3 configuration utility</div>
+        </div>
+        <div class="root_container">
+            <div class="vertical_container">
+                <div class="section">
+                    <div class="section_title">Moderation</div>
+                    <ul>
+                        <li>
+                            <div class="config_option">
+                                <div class="config_option_label">
+                                    Max warnings
+                                </div>
+                                <input class="config_ui_element" type="number" min="3" max="9" inputmode="latin"> 
+                            </div>
+                        </li>
+                        <li>
+                            <div class="config_option">
+                                <div class="config_option_label">
+                                    Action afrer max warnings
+                                </div>
+                                <select class="config_ui_element">
+                                    <option value="ban">Ban</option>
+                                    <option value="kick">Kick</option>
+                                    <option value="timeout">Timeout</option>
+                                </select>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

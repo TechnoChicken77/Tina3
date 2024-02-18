@@ -135,6 +135,40 @@ body {
     scale: 101%;
 }
 
+.config_ui_element {
+    background-color: var(--bg-dark-c);
+
+    border-style: solid;
+    border-color: var(--pink-c);
+    border-radius: 20px;
+
+    color: white;
+
+    text-align: center;
+
+    font-family: monospace;
+    font-size: 120%;
+    width: 40%;
+}
+
+.config_option {
+    height: fit-content;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    padding: 8px;
+
+    justify-content: space-between;
+    align-content: center;
+}
+
+.config_option_label {
+    font-family: Calibri, sans-serif;
+    font-weight: 600;
+    font-size: 120%;
+    width: 40%;
+}
+
 /* Sections */
 
 .section {
