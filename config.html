@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset='utf-8'>
+        <title>Tina3 configuration utility</title>
+        <meta name='viewport' content='width=device-width, initial-scale=1'>
+        <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    </head>
+    <body>
+        <div class="titlebar">
+            <div class="title">Tina3 configuration utility</div>
+        </div>
+        <div class="root_container">
+            <div class="vertical_container">
+                <div class="section">
+                    <div class="section_title">Moderation</div>
+                    <ul>
+                        <p class="config_option_label"><input type="checkbox" id="mod_enabled"> Enable moderation commands </p>
+                        <li>
+                            <div class="config_option">
+                                <div class="config_option_label">
+                                    Moderator role id
+                                </div>
+                                <input id="mod_role" class="config_ui_element" type="number" inputmode="numeric" min="0"> 
+                            </div>
+                        </li>
+                        <li>
+                            <div class="config_option">
+                                <div class="config_option_label">
+                                    Max warnings
+                                </div>
+                                <input id="max_warns" class="config_ui_element" type="number" min="3" max="9" inputmode="numeric" value="3"> 
+                            </div>
+                        </li>
+                        <li>
+                            <div class="config_option">
+                                <div class="config_option_label">
+                                    Action afrer max warnings
+                                </div>
+                                <select id="warn_action" class="config_ui_element" >
+                                    <option value="ban">Ban</option>
+                                    <option value="kick">Kick</option>
+                                    <option value="timeout">Timeout</option>
+                                </select>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="config_option">
+                                <div class="config_option_label">
+                                    Timeout duration (days)
+                                </div>
+                                <input id="warn_action_value" class="config_ui_element" type="number" min="1" max="30" inputmode="numeric" value="3"> 
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="section">
+                    <button class="wide_button" id="generateButton">Generate!</button>
+                </div>
+            </div>
+        </div>
+        <script src="js/config.js"></script>
+    </body>
+</html>

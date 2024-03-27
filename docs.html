@@ -23,8 +23,19 @@
                         </p>
                     </div>
                 </div>
-                <!-- Simple commands -->
+                <!-- Contents -->
                 <div class="section">
+                    <div class="section_title">Contents</div>
+                    <div class="section_box">
+                        <p>You can jump directly to the section you need by clicking on one of these buttons.</p>
+                    </div>
+
+                    <button class="wide_button" id="SimpleCommandsButton">Simple commands</button>
+                    <button class="wide_button" id="R34Button">Rule34 interface</button>
+                    <button class="wide_button" id="EconomyButton">Economy & tokens</button>
+                </div>
+                <!-- Simple commands -->
+                <div class="section" id="SimpleCommands">
                     <div class="section_title">Simple commands</div>
                     <div class="section_box">
                         <p>
@@ -70,7 +81,7 @@
                     </div>
                 </div>
                 <!-- R34 interface -->
-                <div class="section">
+                <div class="section" id="R34">
                     <div class="section_title">Interface with Rule34</div>
                     <div class="section_box">
                         <p>This is probably the biggest feature of the bot. It contains some relatively complicated commands.</p>
@@ -162,7 +173,48 @@
                         </li>
                     </ul>
                 </div>
+                <!-- Economy & tokens-->
+                <div class="section" id="Economy">
+                    <div class="section_title">Economy & tokens</div>
+                    <!-- Introduction -->
+                    <h2 class="paragraph_title">Introduction</h2>
+                    <div class="section_box">
+                        <p>
+                            The bo has its own economy system since it was updated to <u>v0.5b</u> The currency is called <u>"Tokens"</u>.
+                            <u>You can claim 100 tokens daily.</u> Tokens can be transfered between registered users.
+                        </p>
+                        <p>In future, there will be more ways to gain and spend tokens, but for now you can be a part of this relatively simple system.</p>
+                    </div>
+                    <!-- Bank -->
+                    <h2 class="paragraph_title">Bank</h2>
+                    <div class="section_box">
+                        <p>To view your ballance, claim your daily tokens and check your taxes, you can use the bank interface. It can be called with <u>/bank</u> command.</p>
+                        <p>The interface has a few buttons. I'm sure you are not that dumb to figure them out by yourself.</p>
+                    </div>
+                    <!-- Taxes -->
+                    <h2 class="paragraph_title">Taxes</h2>
+                    <div class="section_box">
+                        <p>Yep, you have to pay taxes. To be more accurate, the tax will be collect automaticly at 00:00 UTC.</p>
+                        <p>
+                            Total tax equals to 25% of your ballance. It will be collect only if it reaches a value of <u>100 tokens</u>. (This means you need to have at least 400 tokens)
+                            So make sure to spend your tokens, or they simply will go to waste.
+                        </p>
+                    </div>
+                    <!-- Commands -->
+                    <h2 class="paragraph_title">Commands</h2>
+                    <ul class="section_main_list">
+                        <li>
+                            <u>/bank</u>
+                            <div class="section_box"><p>Displays the bank interface.</p></div>
+                        </li>
+                        <li>
+                            <u>/transfer</u>
+                            <div class="section_box"><p>Allows you transfer tokens to another user. Can be used 3 times per day.</p></div>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
+        <script src="js/scroll_button.js"></script>
     </body>
 </html>
