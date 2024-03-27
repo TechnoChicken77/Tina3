@@ -3,7 +3,7 @@ function generateConfig(buttonId) {
         let warn_action_select = document.getElementById("warn_action")
         var json_obj = {
             "mod_enabled" : document.getElementById("mod_enabled").checked,
-            "mod_role" : parseInt(document.getElementById("mod_role").value),
+            "mod_role" : document.getElementById("mod_role").value,
             "max_warns" : parseInt(document.getElementById("max_warns").value),
             "warn_action" : warn_action_select.options[warn_action_select.selectedIndex].value,
             "warn_action_value" : parseInt(document.getElementById("warn_action_value").value)
