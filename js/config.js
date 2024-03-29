@@ -1,5 +1,5 @@
 function generateConfig(buttonId) {
-    document.getElementById(buttonId).addEventListener("click", function(){
+    document.getElementById(buttonId).addEventListener("click", function() {
         let warn_action_select = document.getElementById("warn_action")
         var json_obj = {
             "mod_enabled" : document.getElementById("mod_enabled").checked,
@@ -17,5 +17,18 @@ function generateConfig(buttonId) {
         navigator.clipboard.writeText(json_string)
     });
 }
+
+function limitRange(input_id, min, max) {
+    let input = document.getElementById(input_id)
+    input.addEventListener("input", function() {
+        let val = parseInt(input.value)
+        console.log(val);
+        if(val > max) { input.value = max }
+        else if(val < min) { input.value = min }
+    });
+}
+
+limitRange("max_warns", 3, 9)
+limitRange("warn_action_value", 1, 30)
 
 generateConfig("generateButton")

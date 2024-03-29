@@ -21,7 +21,7 @@
                                 <div class="config_option_label">
                                     Moderator role id
                                 </div>
-                                <input id="mod_role" class="config_ui_element" type="number" inputmode="numeric" min="0"> 
+                                <input id="mod_role" class="config_ui_element" type="number" inputmode="numeric" min="0" value="0"> 
                             </div>
                         </li>
                         <li>
@@ -29,7 +29,7 @@
                                 <div class="config_option_label">
                                     Max warnings
                                 </div>
-                                <input id="max_warns" class="config_ui_element" type="number" min="3" max="9" inputmode="numeric" value="3"> 
+                                <input class="config_ui_element" id="max_warns" type="number" min="3" max="9" step="1" inputmode="numeric" value="3">
                             </div>
                         </li>
                         <li>
@@ -38,9 +38,9 @@
                                     Action afrer max warnings
                                 </div>
                                 <select id="warn_action" class="config_ui_element" >
+                                    <option value="timeout">Timeout</option>
                                     <option value="ban">Ban</option>
                                     <option value="kick">Kick</option>
-                                    <option value="timeout">Timeout</option>
                                 </select>
                             </div>
                         </li>
@@ -56,6 +56,10 @@
                 </div>
                 <div class="section">
                     <button class="wide_button" id="generateButton">Generate!</button>
+                    <div class="section_box">
+                        <p>After pressing this button the configuration JSON will be copied to your clipboard.</p>
+                        <p>You'll need to apply it to your server by using "/config" command.</p>
+                    </div>
                 </div>
             </div>
         </div>
